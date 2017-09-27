@@ -486,9 +486,9 @@
   </secure-admin>
   <clusters></clusters>
   <applications>
-    <application context-root="/av1_segsoft" object-type="user" name="av1_segsoft" directory-deployed="true" location="file:/C:/Users/Frank%20Carrasco/Desktop/AV1_SegSoft/av1_segsoft/build/web/">
+    <application context-root="/av1_segsoft" object-type="user" name="av1_segsoft" directory-deployed="true" location="file:/C:/Users/Frank%20Carrasco/Desktop/AV2_SegSoft/av1_segsoft/build/web/">
       <property name="archiveType" value="war"></property>
-      <property name="appLocation" value="file:/C:/Users/Frank%20Carrasco/Desktop/AV1_SegSoft/av1_segsoft/build/web/"></property>
+      <property name="appLocation" value="file:/C:/Users/Frank%20Carrasco/Desktop/AV2_SegSoft/av1_segsoft/build/web/"></property>
       <property name="defaultAppName" value="web"></property>
       <property name="keepSessions" value="true"></property>
       <module name="av1_segsoft">

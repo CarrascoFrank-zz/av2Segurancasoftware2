@@ -62,4 +62,14 @@ public class UsuarioDao {
         }
     }
     
+    public void excluirUsuario(Usuario u){
+        String sql = "DELETE FROM usuario WHERE userid = " + u.getUserid();
+        try{
+           Statement comando = connection.createStatement();
+           comando.execute(sql);
+        }catch(SQLException e){
+            System.out.println("Erro ao enviar comando EXCLUIR para o BD");
+        }
+    }
+    
 }

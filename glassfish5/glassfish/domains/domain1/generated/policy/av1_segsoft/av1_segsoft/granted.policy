@@ -1,4 +1,4 @@
-/* AUTOMATICALLY GENERATED ON Mon Sep 25 11:09:32 BRT 2017*/
+/* AUTOMATICALLY GENERATED ON Tue Sep 26 22:54:46 BRT 2017*/
 /* DO NOT EDIT */
 
 grant {
@@ -11,6 +11,8 @@ grant      principal * * {
   permission javax.security.jacc.WebRoleRefPermission "", "**";
   permission javax.security.jacc.WebRoleRefPermission "CadastrarUsuarioServlet", "**";
   permission javax.security.jacc.WebRoleRefPermission "ConsultarUsuarioServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "AtualizarUsuarioServlet", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ExcluirUsuarioServlet", "**";
   permission javax.security.jacc.WebRoleRefPermission "default", "**";
 };
 

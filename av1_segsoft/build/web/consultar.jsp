@@ -12,21 +12,24 @@
         <title>Consultar</title>
     </head>
     <body>
-        <h1>Consulta de Usuario</h1>
+        <h1>Consulta de Usuarios</h1>
         <table border="1">
-            <tr><td>Id</td><td>Nome</td><td></td></tr>
-        <c:forEach var="f" items="${usuarios}">
+            <tr><td>UserID</td><td>Password</td></tr>
+        <c:forEach var="u" items="${usuarios}">
             <tr>
-                <td><c:out value="${u.id}}" /></td>
+                <td><c:out value="${u.userId}" /></td>
+                <td><c:out value="${u.password}" /></td>
+                
                 <td>
                     <form action="ExcluirUsuarioServlet"> 
-                        <input type="hidden" name="id" value="${u.id}"/>
+                        <input type="text" name="userId" value="${u.userid}"/>
                         <input type="submit" value="Excluir" />
                     </form>
                 </td>
                 <td>
                     <form action="atualizar.jsp"> 
-                        <input type="hidden" name="nome" value="${u.id}"/>
+                        <input type="hidden" name="userId" value="${u.userid}"/>
+                        <input type="hidden" name="password" value="${u.password}"/>
                         <input type="submit" value="Atualizar" />
                     </form>
                 </td>

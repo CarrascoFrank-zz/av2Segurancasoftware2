@@ -42,7 +42,7 @@ public class ConsultarUsuarioServlet extends HttpServlet {
         
         request.setAttribute("usuarios", usuarios);
         
-        request.getRequestDispatcher("ConsultarUsuarioServlet").forward(request, response);
+        request.getRequestDispatcher("consultar.jsp").forward(request, response);
         
 
         
